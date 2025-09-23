@@ -25,7 +25,7 @@ Web enumeration (dirs, robots, backups).
 
 WordPress user discovery and access (XML-RPC / admin).
 
-Upload/editor → webshell → RCE.
+Upload/editor, webshell, RCE.
 
 Local privilege escalation to root.
 
