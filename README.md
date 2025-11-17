@@ -1,44 +1,24 @@
-This project contains a compact lab report for the Vancouver (2018) vulnerable VM.
-It was built to show a clear attack path from initial discovery to full compromise and to store the write-up on GitHub.
+🔴 Cyber-Offensive
 
-Components
+Benvenuto nella sezione dedicata al lato offensivo della cybersecurity.
+Qui raccolgo tutto ciò che riguarda Red Team, pentesting, exploitation, enumeration, OSINT avanzato e sviluppo di tool per l’attacco controllato.
 
-Target VM (Vancouver): vulnerable Linux machine with an outdated WordPress site.
+⚔️ Cos’è questa cartella
 
-Web (HTTP/WordPress): primary attack surface — old WP, exposed backups and XML-RPC.
+Questa directory contiene i miei progetti offensivi, gli script, gli esercizi pratici e i laboratori che uso per capire come funzionano davvero gli attacchi.
+Qui studio e sviluppo:
 
-FTP: weak credentials or exposed backup files in webroot.
+tecniche di scanning ed enumerazione
 
-SSH: account access after credential discovery for foothold.
+exploit base e analisi di vulnerabilità
 
-Tools used: nmap, gobuster/wpscan, hydra, curl, basic webshell/plugin upload.
+tool personalizzati in Python o C
 
-Goal
+attività OSINT e raccolta informazioni
 
-Find and exploit weaknesses to obtain user and root flags; document the steps and simple mitigations.
+esercizi ispirati a CTF e ambienti reali
 
-High-level flow
+🎯 Obiettivo
 
-Port/service enumeration (nmap).
-
-Web enumeration (dirs, robots, backups).
-
-WordPress user discovery and access (XML-RPC / admin).
-
-Upload/editor, webshell, RCE.
-
-Local privilege escalation to root.
-
-Quick remediation
-
-Update WordPress, PHP and plugins; remove unused themes.
-
-Remove backups from webroot and secure FTP.
-
-Disable theme/plugin editor; enforce strong passwords and MFA.
-
-Audit permissions, sudoers and running services.
-
-Disclaimer
-
-For educational use only in a controlled lab. Do not test on systems you don't own or have permission to test.
+Imparare a ragionare come un attaccante per capire meglio come difendere.
+L’obiettivo non è “hackerare”, ma capire il funzionamento reale delle tecniche offensive per applicarle in modo etico, controllato e professionale.
